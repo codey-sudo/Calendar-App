@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar with Expandable Date Cards</title>
+    <link rel="stylesheet" href="assets/css/Calendar_Template.css" />
+  </head>
+  <body>
+    <!-- Calendar -->
+    <section class="calendar-month-header">
+      <!-- Month name -->
+      <div id="selected-month" class="calendar-month-header-selected-month">
+        <h1>July 2022</h1>
+      </div>
+
+      <!-- Pagination -->
+      <div class="calendar-month-header-selectors">
+        <span id="previous-month-selector"> < </span>
+        <span id="present-month-selector">Today</span>
+        <span id="next-month-selector">></span>
+      </div>
+    </section>
+    <ul class="daysOfWeek" id="days-of-week">
+      <li class="dayName">Mon</li>
+      <li class="dayName">Tues</li>
+      <li class="dayName">Wed</li>
+      <li class="dayName">Thurs</li>
+      <li class="dayName">Fri</li>
+      <li class="dayName">Sat</li>
+      <li class="dayName">Sun</li>
+    </ul>
+    <div class="calendar">
+      <div class="day">
+        <p>1</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>2</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>3</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>4</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>5</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>6</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>7</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>8</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>9</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>10</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>11</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>12</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>13</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>14</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>15</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>16</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>17</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>18</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="day">
+        <p>19</p>
+        <div class="noteCard">
+          <textarea class="note-area" style="display: none"> </textarea>
+          <div class="display-text" style="display: none"></div>
+          <!-- Hidden by default -->
+          <button class="save" style="display: none">save note</button>
+        </div>
+        <button class="addButton">
+          <span> ADD NOTE </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-plus"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            stroke-width="3"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h22v22H0z" fill="none"></path>
+            <line x1="11" y1="5" x2="11" y2="17"></line>
+            <line x1="5" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </button>
+      </div>
+      <!-- Add as many days as you need -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/Calendar_script.js"></script>
+  </body>
+</html>
