@@ -1,8 +1,6 @@
-# Project Requirements for Calendar App
+# Calendar App
 
-# Final-Project App
-
-Final project app text here.
+Calendar project app description text here.
 
 ## Table of Contents
 
